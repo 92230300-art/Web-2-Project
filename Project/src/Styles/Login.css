@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BACKGROUND */
+.Login {
+    height: 100vh;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('WhatsApp Image 2026-04-19 at 9.57.24 PM.jpeg') no-repeat center/cover;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background: #e76f51;
+}
+
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-form a {
+    color: #f4a261;
+    text-decoration: none;
+}

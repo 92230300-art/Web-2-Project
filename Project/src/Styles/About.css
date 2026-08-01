@@ -1,0 +1,254 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefaf5;
+  color: #1e1e2a;
+  line-height: 1.5;
+  
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #222;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f4a261;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+.about-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  background: #ffffff;
+}
+.about-media {
+  flex: 1.1;
+  position: relative;
+  /* background-image: url('WhatsApp Image 2026-04-19 at 8.12.17 PM.jpeg'); */
+  background-size: cover;
+  background-position: 55% 35%;
+  background-repeat: no-repeat;
+}
+.about-media .overlay-gold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.45) 100%);
+  z-index: 1;
+}
+.about-media::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+.about-content {
+  flex: 1;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.about-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #2c2b2f;
+  margin-bottom: 0.5rem;
+}
+
+.heading-accent {
+  width: 70px;
+  height: 3px;
+  background: #d4af7a;
+  margin: 0.8rem 0 1.8rem 0;
+  border-radius: 3px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #7e6b4e;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-left: 3px solid #d4af7a;
+  padding-left: 1rem;
+}
+
+.story-text p {
+  color: #3e3a3f;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.info-card {
+  background: #fef7ef;
+  border-radius: 20px;
+  padding: 1rem 1.2rem;
+  transition: 0.25s ease;
+  border: 1px solid #f5e5d3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-card i {
+  font-size: 1.8rem;
+  color: #c89f6e;
+}
+
+.info-card div span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.info-card div small {
+  font-size: 0.85rem;
+  color: #7d6b53;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: #fff9f2;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.03);
+}
+
+.quote-section {
+  background: #faf3ea;
+  color: #4c474d;
+  padding: 1.3rem 1.8rem;
+  border-radius: 24px;
+  margin-top: 1rem;
+  font-style: italic;
+  border-left: 6px solid #d4af7a;
+}
+
+.contact-mini {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-mini a {
+  text-decoration: none;
+  color: #c08a4b;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.contact-mini a:hover {
+  color: #a56e36;
+  transform: translateX(3px);
+}
+
+.btn-outline {
+  border: 1.5px solid #d4af7a;
+  background: transparent;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  font-weight: 600;
+  color: #b47c44;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: #d4af7a;
+  color: white;
+}
+
+span {
+    color: #3a3a44;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-media {
+    min-height: 380px;
+  }
+
+  .about-content {
+    padding: 2.5rem 1.8rem;
+  }
+
+  .about-content h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-mini {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,172 @@
+
+.contact {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f2f0;
+    color: #070000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #130b0b;
+    color: #f7f7f7;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a.active {
+    border-bottom: 1px solid #333;
+}
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.intro-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+.form-container {
+    background-color: #e5e0dc;
+    padding: 60px 40px 40px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.bow-decoration {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px; /* Using an emoji as placeholder */
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.name-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sub-label {
+    display: block;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.bottom-section {
+    background-color: #cecece;
+    padding: 80px 50px;
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.bottom-section h2 {
+    font-size: 36px;
+    color: #020000;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.bottom-section h2 span {
+    font-style: italic;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+}
+
+.img-placeholder {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
